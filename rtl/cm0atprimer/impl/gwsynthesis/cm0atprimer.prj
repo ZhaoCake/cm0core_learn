@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/itcm.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/dtcm.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_sram.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cortexm0ds_logic.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/CORTEXM0INTEGRATION.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_arb.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_decS0.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_default_slave.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_i.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_lite.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_o.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/CM0_SoC.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_rpll/gowin_rpll.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/impl/gwsynthesis/cm0atprimer.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
