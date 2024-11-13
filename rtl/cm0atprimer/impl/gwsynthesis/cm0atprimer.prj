@@ -4,10 +4,7 @@
     <Version>beta</Version>
     <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
     <FileList>
-        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/itcm.v" type="verilog"/>
-        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/dtcm.v" type="verilog"/>
-        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_sram.v" type="verilog"/>
-        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cortexm0ds_logic.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/CM0_SoC.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/CORTEXM0INTEGRATION.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_arb.v" type="verilog"/>
@@ -16,8 +13,14 @@
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_i.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_lite.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0_mtx/cm0_mtx_o.v" type="verilog"/>
-        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/CM0_SoC.v" type="verilog"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_rpll/gowin_rpll.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/dtcm.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cm0atprimer/src/gowin_sp/itcm.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_sram.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cortexm0ds_logic.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_iop.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_gpio.v" type="verilog"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_iop_gpio.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

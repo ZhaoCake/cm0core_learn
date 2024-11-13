@@ -3,7 +3,8 @@ module CM0_SOC (
     input rst_n,           // 复位信号
     input swclk,           // SWD时钟
     input swdio,           // SWD数据
-    output reg led_1s   // LED灯
+    output reg led_1s,   // LED灯
+    inout [15:0] gpio0    // GPIO
 );
 
 
@@ -22,7 +23,7 @@ assign SWCLKTCK=swclk;
 
 wire SWDO;/* synthesis syn_keep=1 */
 wire SWDOEN;/* synthesis syn_keep=1 */
-wire SWDI;/* synthesis syn_keep=1 */
+wire SWDI;/* synthesis syn_keep=1 * /
 
 assign SWCLK=swclk;
 assign SWDI = SWDIO;
@@ -398,5 +399,39 @@ always @(posedge board_clk or negedge rst_n) begin
     end 
 end
 
+wire [15:0] gpio0_out,gpio0_in,gpio0_oen;
+
+/* AHB挂载GPIO */
+cmsdk_ahb_gpio cmsdk_ahb_gpio_u0(
+    .HCLK                               (HCLK),
+    .FCLK				(HCLK),
+    .HRESETn                            (HRESETn),
+    .HSEL                               (HSELM3),
+    .HREADY                             (HREADYM3),
+    .HTRANS                             (HTRANSM3),
+    .HSIZE                              (HSIZEM3),
+    .HWRITE                             (HWRITEM3),
+    .HADDR                              (HADDRM3),
+    .HWDATA                             (HWDATAM3),
+    .HREADYOUT                          (HREADYOUTM3),
+    .HRESP                              (HRESPM3),
+    .HRDATA                             (HRDATAM3),
+    .ECOREVNUM				(4'b0),
+    .PORTOUT				(gpio0_out),
+    .PORTIN				(gpio0_in),
+    .PORTEN				(gpio0_oen),
+    .PORTFUNC(),
+    .GPIOINT(),
+    .COMBINT				(irq_gpio0)
+);
+
+//genvar i;
+//generate
+//    for (i=0;i<16;i=i+1) 
+//    begin
+//        assign gpio0[i]   = gpio0_oen[i]?gpio0_out[i]:1'bz;
+//        assign gpio0_in[i]= gpio0_oen[i]?1'bz:gpio0[i];
+//    end
+//endgenerate
 
 endmodule

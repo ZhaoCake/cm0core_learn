@@ -17,7 +17,11 @@
         <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_sp/dtcm.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_sp/itcm.v" type="file.verilog" enable="1"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_gpio.v" type="file.verilog" enable="1"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_iop.v" type="file.verilog" enable="1"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_ahb_to_sram.v" type="file.verilog" enable="1"/>
+        <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cmsdk_iop_gpio.v" type="file.verilog" enable="1"/>
         <File path="/home/zhaocake/WorkSpace/arm/cm0core_learn/rtl/cortexm0ds_logic.v" type="file.verilog" enable="1"/>
+        <File path="src/cm0atprimer.cst" type="file.cst" enable="1"/>
     </FileList>
 </Project>
